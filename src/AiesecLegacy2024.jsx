@@ -71,7 +71,7 @@
                      >
                          <div className="p-6 space-y-8">
                              <section>
-                                 <h4 className="text-xl font-semibold mb-4 flex items-center">
+                                 <h4 className="text-xl text-white font-semibold mb-4 flex items-center">
                                      <Star className="mr-2 " size={24}/>
                                      Responsibilities
                                  </h4>
@@ -79,7 +79,7 @@
                                      {description.responsibilities.map((item, index) => (
                                          <motion.li
                                              key={index}
-                                             className="text-lg flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
+                                             className="text-lg text-white flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
                                              initial={{opacity: 0, x: -20}}
                                              animate={{opacity: 1, x: 0}}
                                              transition={{delay: index * 0.1}}
@@ -91,7 +91,7 @@
                                  </ul>
                              </section>
                              <section>
-                                 <h4 className="text-xl font-semibold mb-4 flex items-center">
+                                 <h4 className="text-xl text-white font-semibold mb-4 flex items-center">
                                      <Briefcase className="mr-2 text-blue-400" size={24}/>
                                      Experience
                                  </h4>
@@ -99,7 +99,7 @@
                                      {description.experience.map((item, index) => (
                                          <motion.li
                                              key={index}
-                                             className="text-lg flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
+                                             className="text-lg text-white flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
                                              initial={{opacity: 0, x: -20}}
                                              animate={{opacity: 1, x: 0}}
                                              transition={{delay: index * 0.1}}
@@ -111,15 +111,15 @@
                                  </ul>
                              </section>
                              <section>
-                                 <h4 className="text-xl font-semibold mb-4 flex items-center">
-                                     <BarChart className="mr-2 text-green-400" size={24}/>
+                                 <h4 className="text-xl text-white font-semibold mb-4 flex items-center">
+                                     <BarChart className="mr-2  text-green-400" size={24}/>
                                      KPIs / MoS
                                  </h4>
                                  <ul className="space-y-2">
                                      {description.kpis.map((item, index) => (
                                          <motion.li
                                              key={index}
-                                             className="text-lg flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
+                                             className="text-lg text-white flex items-start bg-gray-800 bg-opacity-20 p-4 rounded-md"
                                              initial={{opacity: 0, x: -20}}
                                              animate={{opacity: 1, x: 0}}
                                              transition={{delay: index * 0.1}}
