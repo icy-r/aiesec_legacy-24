@@ -170,13 +170,21 @@
 
              <header className="text-center mb-16 relative z-10">
                  <motion.h1
-                     className="text-6xl font-bold mb-4 text-yellow-400"
+                     className="text-6xl font-bold text-yellow-400"
                      initial={{opacity: 0, y: -50}}
                      animate={{opacity: 1, y: 0}}
                      transition={{duration: 0.8}}
                  >
                      LEGACY 2024
                  </motion.h1>
+                    <motion.h4
+                        className="text-xl font-semibold mb-6 text-white"
+                        initial={{opacity: 0, y: -50}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 1}}
+                    >
+                        by AIESEC in SLIIT
+                    </motion.h4>
                  <TypeAnimation
                      sequence={[
                          'Celebrating Excellence in Leadership',
