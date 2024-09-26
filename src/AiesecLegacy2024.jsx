@@ -1,5 +1,4 @@
-    import React, { useState } from 'react';
-    import { motion, AnimatePresence } from 'framer-motion';
+ import { motion, AnimatePresence } from 'framer-motion';
     import { Calendar, Users, Award, Star, ChevronDown, ChevronUp } from 'lucide-react';
     import { TypeAnimation } from 'react-type-animation';
     import confetti from 'canvas-confetti';
@@ -142,6 +141,7 @@
     };
 
 
+    // eslint-disable-next-line react/prop-types
     const JobDescription = ({ title, description, isOpen, toggleOpen }) => {
         return (
             <motion.div
@@ -255,10 +255,10 @@
                             className="text-xl bg-white bg-opacity-10 rounded-lg p-8 backdrop-blur-sm leading-relaxed"
                             whileHover={{boxShadow: "0 0 20px rgba(255, 255, 255, 0.3)"}}
                         >
-                            'Legacy 2024' is the annual award ceremony organized by AIESEC in SLIIT to recognize and
+                            &apos;Legacy 2024&apos; is the annual award ceremony organized by AIESEC in SLIIT to recognize and
                             celebrate the contributions and achievements of its members. It is the most prestigious night of
                             the
-                            AIESEC in SLIIT's calendar, acknowledging hard work, dedication, and impact in personal and
+                            AIESEC in SLIIT&apos;s calendar, acknowledging hard work, dedication, and impact in personal and
                             professional development.
                         </motion.p>
                     </motion.section>
