@@ -192,14 +192,15 @@
         const [openRole, setOpenRole] = useState(null);
 
         const toggleRole = (role) => {
+            role = role.replace(/\s+/g, '-');
             setOpenRole(openRole === role ? null : role);
         };
 
         const scrollToRole = (role) => {
-            const element = document.getElementById(role);
+            const element = document.getElementById(role.replace(/\s+/g, '-'));
             if (element) {
                 element.scrollIntoView({behavior: 'smooth'});
-                setOpenRole(role);
+                setOpenRole(role.replace(/\s+/g, '-'));
             }
         };
 
@@ -284,8 +285,10 @@
                                     className="bg-white bg-opacity-20 rounded-lg p-6 text-center backdrop-blur-sm cursor-pointer flex flex-col items-center justify-center"
                                     whileHover={{scale: 1.05, boxShadow: "0 0 20px rgba(255, 255, 255, 0.3)"}}
                                     onClick={() => {
-                                        scrollToRole(fullName);
+                                        scrollToRole(fullName.replace(/\s+/g, '-'));
                                         triggerConfetti();
+                                        //after a second, trigger scroll to role again to ensure smooth scroll
+                                        setTimeout(() => scrollToRole(fullName.replace(/\s+/g, '-')), 300);
                                     }}
                                 >
                                     <span className="text-4xl mb-2">{icon}</span>
@@ -300,11 +303,11 @@
                     <section className="mb-16">
                         <h2 className="text-4xl font-semibold mb-6">Job Descriptions</h2>
                         {Object.entries(jobDescriptions).map(([role, description], index) => (
-                            <div key={index} id={role}>
+                            <div key={index} id={role.replace(/\s+/g, '-')}>
                                 <JobDescription
                                     title={role}
                                     description={description}
-                                    isOpen={openRole === role}
+                                    isOpen={openRole === role.replace(/\s+/g, '-')}
                                     toggleOpen={() => toggleRole(role)}
                                 />
                             </div>
