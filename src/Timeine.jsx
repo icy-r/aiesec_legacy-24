@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar } from 'lucide-react';
+import { useState } from 'react';
 
 const TimelineItem = ({ date, title, subtitle, description }) => {
     const [isHovered, setIsHovered] = useState(false);

@@ -2,6 +2,7 @@
     import { Calendar, Users, Award, Star, ChevronDown, ChevronUp } from 'lucide-react';
     import { TypeAnimation } from 'react-type-animation';
     import confetti from 'canvas-confetti';
+    import { useState } from 'react';
     import Timeline from "./Timeine.jsx";
 
     const AnimatedBackground = () => {
