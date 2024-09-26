@@ -9,7 +9,7 @@
  const AnimatedBackground = () => {
      return (
          <div className="fixed inset-0 z-0">
-             {[...Array(10)].map((_, i) => (
+             {[...Array(15)].map((_, i) => (
                  <motion.div
                      key={i}
                      className="absolute bg-yellow-500 rounded-full opacity-20"
@@ -25,6 +25,7 @@
                          duration: Math.random() * 20 + 20,
                          repeat: Infinity,
                          repeatType: 'reverse',
+                         restSpeed: 0.3,
                      }}
                  />
              ))}

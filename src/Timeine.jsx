@@ -77,7 +77,7 @@ const Timeline = () => {
 };
 
 const TimelineSection = () => (
-    <section className="mb-16 bg-indigo-900 py-12">
+    <section className="mb-16 bg-indigo-900 rounded-lg py-12">
         <h2 className="text-4xl font-semibold mb-12 text-yellow-400 flex items-center justify-center">
             <Calendar className="mr-3 text-yellow-400" size={32} /> Timeline
         </h2>
