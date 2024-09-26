@@ -15,7 +15,7 @@ const TimelineItem = ({ date, title, subtitle, description }) => {
             transition={{ duration: 0.5 }}
         >
             <div className="w-1/2 text-right pr-8">
-                <p className="text-sm text-cyan-300 font-semibold">{date}</p>
+                <p className="text-sm text-yellow-400 font-semibold">{date}</p>
             </div>
             <div className="absolute left-1/2 w-4 h-4 bg-cyan-400 rounded-full flex items-center justify-center z-10 transform -translate-x-1/2">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -29,7 +29,7 @@ const TimelineItem = ({ date, title, subtitle, description }) => {
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
-                            className="text-sm text-gray-300 mt-2"
+                            className="text-sm text-gray-300 mt-2 absolute"
                         >
                             {description}
                         </motion.p>
@@ -78,8 +78,8 @@ const Timeline = () => {
 
 const TimelineSection = () => (
     <section className="mb-16 bg-indigo-900 py-12">
-        <h2 className="text-4xl font-semibold mb-12 text-center text-white flex items-center justify-center">
-            <Calendar className="mr-3" size={32} /> Timeline
+        <h2 className="text-4xl font-semibold mb-12 text-yellow-400 flex items-center justify-center">
+            <Calendar className="mr-3 text-yellow-400" size={32} /> Timeline
         </h2>
         <Timeline />
     </section>

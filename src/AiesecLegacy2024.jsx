@@ -35,8 +35,8 @@
 
  const roleMapping = {
      "OCP": { fullName: "Organizing Committee President", icon: "👑", count: 1 },
-     "OCVP Delegate Experience": { fullName: "OCVP Delegate Experience", icon: "🤝", count: 1 },
-     "OCVP Delegate Experience & MKT": { fullName: "OCVP Delegate Experience & Marketing", icon: "📣", count: 1 },
+     "OCVP DE": { fullName: "OCVP Delegate Experience", icon: "🤝", count: 1 },
+     "OCVP DE & MKT": { fullName: "OCVP Delegate Experience & Marketing", icon: "📣", count: 1 },
      "OCVP Events": { fullName: "OCVP Events", icon: "🎉", count: 1 },
      "OCVP MKT": { fullName: "OCVP Marketing", icon: "📈", count: 3 },
      "OCVP PD": { fullName: "OCVP Partnership Development", icon: "🤝", count: 4 },
@@ -216,9 +216,9 @@
 
                  {/* Timeline section */}
                  <section className="mb-16">
-                     <h2 className="text-4xl text-yellow-400 font-semibold mb-6 flex items-center ">
-                         <Calendar className="mr-3 text-yellow-400" size={32}/> Timeline
-                     </h2>
+                     {/*<h2 className="text-4xl text-yellow-400 font-semibold mb-6 flex items-center ">*/}
+                     {/*    <Calendar className="mr-3 text-yellow-400" size={32}/> Timeline*/}
+                     {/*</h2>*/}
                      <Timeline />
                  </section>
 
