@@ -358,8 +358,8 @@ const AiesecLegacy2024 = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {
+              triggerConfetti();
               setTimeout(() => {
-                triggerConfetti();
                 window.open("https://forms.gle/nK465GXWfMEaGJTS9", "_blank");
               }, 1000);
             }}
